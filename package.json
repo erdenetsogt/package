@@ -1,0 +1,23 @@
+{
+  "name": "shared-types",
+  "version": "1.0.0",
+  "description": "shared types for my projects",
+  "keywords": [
+    "types"
+  ],
+  "homepage": "https://github.com/erdenetsogt/package#readme",
+  "bugs": {
+    "url": "https://github.com/erdenetsogt/package/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdenetsogt/package.git"
+  },
+  "license": "ISC",
+  "author": "Erdenetsogt",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
