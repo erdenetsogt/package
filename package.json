@@ -1,6 +1,6 @@
 {
   "name": "@erdenetsogt/shared-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shared types for my projects",
   "keywords": [
     "types"
@@ -16,9 +16,17 @@
   "license": "ISC",
   "author": "Erdenetsogt",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
   }
 }
