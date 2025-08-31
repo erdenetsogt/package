@@ -21,15 +21,16 @@ export interface Role {
 //     role: Role;
 //   }
 export interface User {
-    id: number;
-    username: string;
+    id: number;    
     email: string;    
     roles: Role[];
     company: Company;
-    people: People;
-    
+    people: People;    
 }
-
+export interface Auth {
+  accessToken: string;
+  refreshToken?: string;
+}
 // export interface JWTPayload {
 //   id: number;
 //   username: string;
@@ -44,8 +45,14 @@ export interface User {
 //   permissions: string[];
 // }
 
+export interface JWTPayload{
+  id:number;
+  email:string;
+  companyId:number;
+  peopleId:number;
+}
 
-export interface JWTPayload <T> {
+export interface SuccessPayload <T> {
     success: boolean;
     user:T;
 }
